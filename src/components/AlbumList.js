@@ -11,7 +11,7 @@ import axios from 'axios';
      }
 
 renderAlbums() {
-    return this.state.albums.map(album => <Text>{album.title}</Text>);
+    return this.state.albums.map(album => <Text key={album.title}>{album.title}</Text>);
 }
 
 
